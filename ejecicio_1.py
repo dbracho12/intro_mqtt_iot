@@ -24,7 +24,7 @@ client = paho.Client("Drone")
 client.on_connect = on_connect
 client.connect(broker, port)
 client.loop_start()
-#Enviar informacion (topic,payload)
+#Enviar informacion (topic,payload.)
 client.publish(topico2_volar,1)
 client.publish(topico7_joystick,'{"x": 0, "y": 0}')
 time.sleep(4)
